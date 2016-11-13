@@ -1,4 +1,66 @@
-name: Navina
-markdown: kramdown
+# Website settings
+baseurl: "/"
 
-permalink: /blog/:year/:month/:day/:title
+# Internal nav
+nav:
+  main:
+    tags: "/blog/tags"
+    archive: "/blog/archive"
+    blog: "/blog"
+    home: "/"
+  blog:
+    all: "/blog"
+    popular: "/blog/popular"
+    tags: "/blog/tags"
+    rss: "/feed.xml"
+    archive: "/blog/archive"
+  archive:
+    all: "/blog/archive"
+  tags:
+    all: "/blog/tags"
+
+# Bio settings
+name: "Navina Ramesh"
+slogan: "Tech. Travel. Thoughts"
+description: "Navina's space on the Web"
+thumbnail_path: "navina.jpg"
+
+# URLs
+contact_urls:  
+  twitter: 
+    url: "https://twitter.com/navina_r"
+    label: "Twitter"
+    icon: "twitter-square"
+    username: "@navina_r"
+  linkedin: 
+    url: "https://www.linkedin.com/in/rnavina"
+    label: "LinkedIn"
+    icon: "linkedin-square"
+  facebook: 
+    url: "https://www.facebook.com/r.navina"
+    label: "Facebook"
+    icon: "facebook-square"
+  github: 
+    url: "https://github.com/navina/"
+    label: "GitHub"
+    icon: "github-square"
+  email: 
+    url: "mailto:navi.trinity@gmail.com"
+    label: "Email"
+    icon: "envelope-square"
+
+# Jekyll build settings
+paginate: 10
+paginate_path: "/blog/page:num"
+permalink: "/blog/:year/:month/:day/:title/"
+sass:
+  sass_dir: "/assets/css"
+  style: :compressed  
+highlighter: rouge
+timezone: 'America/Los_Angeles'
+
+# Plugins (GitHub Pages only support a few)
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-paginate
